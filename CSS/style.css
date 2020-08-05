@@ -1,3 +1,5 @@
+
+
 body{
         margin: 0;
         background:#FFFAFF;
@@ -15,36 +17,37 @@ header {
     font-family: "Oswald";
     font-weight: 700;
     padding: 0;
-
-}
-
-nav {
-    background:#0D1321;
-    font-size: 30px;
-    text-transform: uppercase;
-}
-
-nav ul {
     margin:0;
-    padding: 0;
-    list-style: none;
+    overflow:hidden;
+
 }
 
-nav li {
-    display: inline-block;
-    text-align: center;
+nav{
+    background-color: #0D1321;
+    font-size: 30px;
+
+}
+nav.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    nav li {
+    color:#EAEAEA;
+    flex-grow: 1;
+    }
+
+    nav a {
     color:#EAEAEA;
     text-decoration: none;
-}
-body {
-    margin: 0;
-    background:#FFFAFF;
-    color: #1D2D44;
-    text-align: center;
-}
+    }
 
 .resumeEntry {
     color: #1D2D44;
