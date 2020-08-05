@@ -1,0 +1,52 @@
+body{
+        margin: 0;
+        background:#FFFAFF;
+        color: #1D2D44;
+        font-family: "Oswald";
+        text-align: center;
+    }
+
+header {
+    color: #EAEAEA;
+    background: #0D1321;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Oswald";
+    font-weight: 700;
+    padding: 0;
+
+}
+
+nav {
+    background:#0D1321;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+}
+
+nav a {
+    color:#EAEAEA;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    background:#FFFAFF;
+    color: #1D2D44;
+    text-align: center;
+}
+
+.resumeEntry {
+    color: #1D2D44;
+    text-align: center;
+}
