@@ -1,55 +1,114 @@
-
-
-body{
-        margin: 0;
-        background:#FFFAFF;
-        color: #1D2D44;
-        font-family: "Oswald";
-        text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    margin: 0;
+    margin-top: 0;
+    background:#FFFAFF;
+    color: #1D2D44;
+    font-family: "Oswald";
+    text-align: center;
+    font-size: 15px;
+    padding: 0;
     }
 
 header {
+    background: #0D1321;
     color: #EAEAEA;
+    font-family: "Open Sans Condensed";
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+nav {
+    text-align: left;
+    top: 100%;
+    left: 0;
+    position: absolute;
     background: #0D1321;
     width: 100%;
-    text-align: center;
-    font-size: 60px;
-    font-family: "Oswald";
-    font-weight: 700;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
     padding: 0;
-    margin:0;
-    overflow:hidden;
-
 }
 
-nav{
-    background-color: #0D1321;
-    font-size: 30px;
-
+nav li {
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
-nav.flexbox {
+
+nav a {
+    color:  #EAEAEA;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+nav a:hover {
+    color: powderblue;
+}
+
+.navButton:checked ~ nav{
+    display: block;  
+}
+
+.navButton {
+    display: none;
+}
+
+.navButtonLabel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
     display: flex;
-    justify-content: space-between;
+    height: 100%;
     align-items: center;
 }
 
-    nav ul {
-        display: flex;
-        align-items: center;
-        list-style: none;
-    }
+.navButtonLabel span,
+.navButtonLabel span::before,
+.navButtonLabel span::after {
+    display: block;
+    background:#EAEAEA;
+    height: 2px;
+    width: 2em;
+    border-radius: 4px;
+    position: relative;
+}
 
-    nav li {
-    color:#EAEAEA;
-    flex-grow: 1;
-    }
+.navButtonLabel span::before,
+.navButtonLabel span::after {
+    content: '';
+    position: absolute;
+}
 
-    nav a {
-    color:#EAEAEA;
-    text-decoration: none;
-    }
+.navButtonLabel span::before {
+    bottom: 5px;
+}
+
+.navButtonLabel span::after {
+    top: 5px;
+}
+
+main {
+    padding-top: 130px;
+}
 
 .resumeEntry {
     color: #1D2D44;
     text-align: center;
 }
+
